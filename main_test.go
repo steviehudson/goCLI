@@ -24,6 +24,7 @@ func BenchmarkAdder(b *testing.B) {
 
 //"go test -memprofile mem.out goCLI" -create test profile output
 //"go tool pprof -web goCLI.test mem.out" - look for mem leeks
+//see https://app.pluralsight.com/course-player?clipId=92c02f66-6f3e-413e-b1ca-a7b362374fbf for further analysis
 func TestMessageWriter(t *testing.T) {
 	if messageWriter("Hello", "World") != "Hello, World" {
 		t.Fail()
